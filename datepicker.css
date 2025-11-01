@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.dates{
+    border: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+}
+.datepicker{
+    margin: 2em auto;
+    width: fit-content;
+    font-size: 1rem;
+}
+.datepick{
+    width: 100%;
+    padding: 0.4em;
+    border: 2px solid black;
+}
+.datepicker__month-select{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.4em 0;
+}
+.datepicker__month-select button{
+    border: 0;
+    background-color: inherit;
+    font-weight: bold;
+}
+.dates__row{
+    display: flex;
+    width: 100%;
+}
+.dates__row p{
+    width: 1rem;
+    box-sizing: content-box;
+    min-width: 1em;
+    padding: 0.4em;
+    text-align: center;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+.calendar{
+    margin-top: 0.2em;
+    border: 2px solid black;
+}
+@media (min-width: 768px) {
+    .datepicker{
+        font-size: 32px;
+    }
+    .datepicker__month-select button{
+        font-size: 1em;
+    }
+    .datepick{
+        font-size: 1em;
+    }
+}
